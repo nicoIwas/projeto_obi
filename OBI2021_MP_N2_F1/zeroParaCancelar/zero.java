@@ -2,7 +2,7 @@ import java.util.*;
 
 import javax.print.event.PrintEvent;
 
-class Main{
+class zero{
     
     
     

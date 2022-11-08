@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-class Main{
+class idade{
 
     public static int qualAidade(int idades[]){
     
@@ -10,7 +10,7 @@ class Main{
     else if(idades[2]<=idades[0] && idades[0]<=idades[1]) return idades[0];
     
     else if(idades[0]<=idades[1] && idades[1]<=idades[2]) return idades[1];
-    else if(idades[0]<=idades[1] && idades[1]<=idades[0]) return idades[1];
+    else if(idades[2]<=idades[1] && idades[1]<=idades[0]) return idades[1];
     
     else if(idades[0]<=idades[2] && idades[2]<=idades[1]) return idades[2];
     else if(idades[1]<=idades[2] && idades[2]<=idades[0]) return idades[2];
@@ -32,6 +32,6 @@ class Main{
         idades[1] = sc.nextInt();
         idades[2] = sc.nextInt();
         
-        System.out.println("\n" + Main.qualAidade(idades));
+        System.out.println("\n" + idade.qualAidade(idades));
     }
 }
